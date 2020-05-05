@@ -1,4 +1,3 @@
-# Created by a557510 at 05/04/2020
 Feature: Cashier Scenarios
 
   These some scenarios
@@ -14,6 +13,10 @@ Feature: Cashier Scenarios
       | $5          | 500   |
       | $2          | 200   |
       | $1          | 100   |
+      | 50 cent     | 50    |
       | Quarter     | 25    |
       | Dime        | 10    |
+      | Nickel      | 5     |
       | Penny       | 1     |
+    And I request smallest number of bills and coins for 287
+
