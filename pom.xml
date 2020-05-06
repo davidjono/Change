@@ -25,21 +25,11 @@
             <version>${lombok.version}</version>
         </dependency>
 
-
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.26</version>
         </dependency>
-
-
-<!--        &lt;!&ndash;        JSR 354 RI by Moneta&ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.javamoney</groupId>-->
-<!--            <artifactId>moneta</artifactId>-->
-<!--            <version>1.1</version>-->
-<!--        </dependency>-->
-
 
         <!--        Test Scope-->
         <dependency>

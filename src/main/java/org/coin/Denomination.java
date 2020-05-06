@@ -1,8 +1,14 @@
-package org.coin.util;
+package org.coin;
 
 
 import lombok.*;
 
+/**
+ * Represents the currency Denomination
+ *
+ * For e.g. $100 , 10000
+ *
+ */
 @Builder
 @Data
 @ToString
