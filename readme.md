@@ -5,14 +5,14 @@ take in a balance and convert it into denominations (bills/coins). The intent is
 balance into the least number of bills/coins. The balance is expressed as the lowest unit of currency (e.g.
 pennies for USD).
 
-####Examples:
+#### Examples:
 Given the balance 87, the function will return 3 Quarters, 1 Dime, 2 Pennies.
 Given the balance 287, the function will return 2 Dollars, 3 Quarters, 1 Dime, 2 Pennies.
 Please make use of Object Oriented analysis and design techniques in your implementation so that
 enhancements to the feature can be easily accommodated in the future.
 
 
-####Example of a feature enhancement:
+#### Example of a feature enhancement:
 Distribute currency from different countries that use different denominations:
 e.g. for Indian Rupee (INR): Given the balance 287, the function will return 1 two rupee coin, 1 fifty paise
 coin, 1 twenty five paise coin, 1 ten paise coin and 2 one paise coins
