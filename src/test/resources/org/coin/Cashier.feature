@@ -128,3 +128,30 @@ Feature: Cashier Scenarios
       | EUR5        | 500   |
       | One Euro    | 100   |
 
+
+  Scenario: To ensure we receive the smallest amount of bills for INR denominations
+    Given I have a currency called "INR" with the following denominations and an amount in smallest units of "287"
+      | description | value  |
+      | 2000 Rupee  | 200000 |
+      | 500 Rupee   | 50000  |
+      | 100 Rupee   | 10000  |
+      | 50 Rupee    | 5000   |
+      | 20 Rupee    | 2000   |
+      | 10 Rupee    | 1000   |
+      | 5 Rupee     | 500    |
+      | 2 Rupee     | 200    |
+      | 50 Paise    | 50     |
+      | 25 Paise    | 25     |
+      | 10 Paise    | 10     |
+      | 1 Paise     | 1      |
+    And I request smallest number of bills and coins
+    Then I should have the following change
+      | description | value |
+      | 2 Rupee     | 200   |
+      | 50 Paise    | 50    |
+      | 25 Paise    | 25    |
+      | 10 Paise    | 10    |
+      | 1 Paise     | 1     |
+      | 1 Paise     | 1     |
+
+

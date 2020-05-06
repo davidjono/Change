@@ -572,9 +572,9 @@ jQuery.cookie = function(name, value, options) {
     <body>
         <div id="container">
             <div id="header">
-                <div class="time" xmlns="">54 ms</div>
+                <div class="time" xmlns="">101 ms</div>
                 <h1>
-                    All Features in: test: <strong><span class="total" xmlns="http://www.w3.org/1999/xhtml">17 total, </span><span class="passed">17 passed</span></strong>
+                    All Features in: test: <strong><span class="total" xmlns="http://www.w3.org/1999/xhtml">20 total, </span><span class="passed">20 passed</span></strong>
                 </h1>
                 <div id="treecontrol">
                     <ul>
@@ -593,22 +593,22 @@ jQuery.cookie = function(name, value, options) {
                 <ul id="tree">
                     <li xmlns="" class="level top open">
                         <span><em class="time">
-                                <div class="time">54 ms</div>
+                                <div class="time">101 ms</div>
                             </em>Cucumber</span>
                         <ul>
                             <li class="level suite open">
                                 <span><em class="time">
-                                        <div class="time">52 ms</div>
+                                        <div class="time">99 ms</div>
                                     </em>Cashier Scenarios</span>
                                 <ul>
                                     <li class="level suite open">
                                         <span><em class="time">
-                                                <div class="time">51 ms</div>
+                                                <div class="time">95 ms</div>
                                             </em>To ensure we receive the smallest amount of bills for USD denominations</span>
                                         <ul>
                                             <li class="level test">
                                                 <span><em class="time">
-                                                        <div class="time">49 ms</div>
+                                                        <div class="time">92 ms</div>
                                                     </em><em class="status">passed</em>I have a currency called "USD" with the following denominations and an amount in smallest units of "3"</span>
                                                 <ul>
                                                     <li class="text">
@@ -623,7 +623,7 @@ jQuery.cookie = function(name, value, options) {
                                             </li>
                                             <li class="level test">
                                                 <span><em class="time">
-                                                        <div class="time">1 ms</div>
+                                                        <div class="time">2 ms</div>
                                                     </em><em class="status">passed</em>I should have the following change</span>
                                             </li>
                                         </ul>
@@ -657,12 +657,12 @@ jQuery.cookie = function(name, value, options) {
                                     </li>
                                     <li class="level suite open">
                                         <span><em class="time">
-                                                <div class="time">0 ms</div>
+                                                <div class="time">1 ms</div>
                                             </em>To ensure we receive the smallest amount of bills for USD denominations</span>
                                         <ul>
                                             <li class="level test">
                                                 <span><em class="time">
-                                                        <div class="time">0 ms</div>
+                                                        <div class="time">1 ms</div>
                                                     </em><em class="status">passed</em>I have a currency called "USD" with the following denominations and an amount in smallest units of "1"</span>
                                                 <ul>
                                                     <li class="text">
@@ -711,16 +711,43 @@ jQuery.cookie = function(name, value, options) {
                                     </li>
                                     <li class="level suite open">
                                         <span><em class="time">
-                                                <div class="time">0 ms</div>
+                                                <div class="time">1 ms</div>
                                             </em>To ensure we receive the smallest amount of bills for EUR denominations</span>
                                         <ul>
                                             <li class="level test">
                                                 <span><em class="time">
-                                                        <div class="time">0 ms</div>
+                                                        <div class="time">1 ms</div>
                                                     </em><em class="status">passed</em>I have a currency called "EUR" with the following denominations and an amount in smallest units of "53600"</span>
                                                 <ul>
                                                     <li class="text">
                                                         <span class="stderr">[main] INFO org.coin.CashierSteps - Amount = Money(amount=53600, currency=EUR, denominations=[Denomination(description=EUR500, value=50000), Denomination(description=EUR200, value=20000), Denomination(description=EUR100, value=10000), Denomination(description=EUR50, value=5000), Denomination(description=EUR20, value=2000), Denomination(description=EUR10, value=1000), Denomination(description=EUR5, value=500), Denomination(description=Two Euro, value=200), Denomination(description=One Euro, value=100), Denomination(description=50 Cent, value=50), Denomination(description=20 Cent, value=20), Denomination(description=10 Cent, value=10), Denomination(description=5 Cent, value=5), Denomination(description=2 Cent, value=2), Denomination(description=1 Cent, value=1)])<br/></span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="level test">
+                                                <span><em class="time">
+                                                        <div class="time">0 ms</div>
+                                                    </em><em class="status">passed</em>I request smallest number of bills and coins</span>
+                                            </li>
+                                            <li class="level test">
+                                                <span><em class="time">
+                                                        <div class="time">0 ms</div>
+                                                    </em><em class="status">passed</em>I should have the following change</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="level suite open">
+                                        <span><em class="time">
+                                                <div class="time">1 ms</div>
+                                            </em>To ensure we receive the smallest amount of bills for INR denominations</span>
+                                        <ul>
+                                            <li class="level test">
+                                                <span><em class="time">
+                                                        <div class="time">1 ms</div>
+                                                    </em><em class="status">passed</em>I have a currency called "INR" with the following denominations and an amount in smallest units of "287"</span>
+                                                <ul>
+                                                    <li class="text">
+                                                        <span class="stderr">[main] INFO org.coin.CashierSteps - Amount = Money(amount=287, currency=INR, denominations=[Denomination(description=2000 Rupee, value=200000), Denomination(description=500 Rupee, value=50000), Denomination(description=100 Rupee, value=10000), Denomination(description=50 Rupee, value=5000), Denomination(description=20 Rupee, value=2000), Denomination(description=10 Rupee, value=1000), Denomination(description=5 Rupee, value=500), Denomination(description=2 Rupee, value=200), Denomination(description=50 Paise, value=50), Denomination(description=25 Paise, value=25), Denomination(description=10 Paise, value=10), Denomination(description=1 Paise, value=1)])<br/></span>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -778,7 +805,7 @@ jQuery.cookie = function(name, value, options) {
             </div>
         </div>
         <div id="footer">
-            <p>Generated by IntelliJ IDEA on 06/05/2020, 13:26</p>
+            <p>Generated by IntelliJ IDEA on 06/05/2020, 20:04</p>
         </div>
     </body>
 </html>

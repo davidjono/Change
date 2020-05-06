@@ -77,11 +77,7 @@ public final class Money implements Serializable {
                     changeList.add(denomination);
                 }
                 remainder = remainder % denomination.getValue();
-
             }
-
-
-
         }
         return changeList;
     }
