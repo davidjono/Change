@@ -21,9 +21,16 @@ e.g. for Euro (EURO): Given the balance 287, the function will return 1 two euro
 coin, 1 10c coin, 1 5c coin, and 2 1c coins
 
 ## Proposed Solution
-At present, there is no base class of Money in Java. However, JSR 354 is proposing a Money and Currency API.
+At present, there is no base class representing Money in Java. However, JSR 354 is proposing a Money and Currency API.
 
-For this solution I am proposing a basic Money class that is Denomination aware. 
+For this solution, I am proposing a basic Money class that is Denomination aware. 
+
+    List<Denomination> denominations = new ArrayList<>();
+    denominations.add(Denomination.builder().description("$100").value(10000).build());
+    denominations.add(Denomination.builder().description("$50").value(5000).build());
+
+    Money money = Money.builder().amount(new BigDecimal("50000")).currency(Currency.getInstance("USD")).denominations(denominations).build();
+    List<Denomination> change = money.change();
 
 Please see test scenarios
 
